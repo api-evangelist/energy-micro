@@ -1,8 +1,26 @@
 aid: energy-micro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/energy-micro.png
 name: Energy Micro
-description: 'Energy Micro is a company surfaced as a portfolio company of northzone and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Energy Micro was a Norwegian fabless semiconductor company, founded in
+  2007 and headquartered in Oslo, best known for its EFM32 "Gecko" family of energy-friendly
+  32-bit ARM Cortex-M microcontrollers and the EFR radio products targeting low-power
+  embedded and IoT applications. The company was acquired by Silicon Labs in 2013 and
+  fully absorbed into that company''s product lines; its former energymicro.com domain
+  now redirects to silabs.com. It was surfaced as a portfolio company of Northzone and
+  added to the API Evangelist network as a stub. Enrichment found no independent, first-party
+  API, developer portal, OpenAPI, SDK, or MCP surface for Energy Micro as a standalone
+  entity — the developer tooling for its EFM32 line lives under Silicon Labs today.'
 url: https://raw.githubusercontent.com/api-evangelist/energy-micro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,21 @@ x-backed-by:
 - northzone
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Silicon Labs
+x-acquired-year: '2013'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Semiconductors
+- Microcontrollers
+- Embedded
+- IoT
+- Norway
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,10 @@ maintainers:
 common:
 - type: Website
   url: http://www.energymicro.com
+- type: Successor
+  url: https://www.silabs.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
